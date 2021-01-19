@@ -4,17 +4,28 @@
 [![Downloads](https://img.shields.io/npm/dt/@react-three/a11y.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/a11y)
 [![Discord Shield](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/ZZjjNvJ)
 
+![Imgur](https://imgur.com/FdZ3jmW.jpg)
+
 ```bash
 npm install @react-three/a11y
 ```
 
-`@react-three/a11y` brings accessibility to WebGL, with easy to use components [react-three-fiber](https://github.com/pmndrs/react-three-fiber) components to enable focus indication, keyboard tab navigation, and screen reader support.
+`@react-three/a11y` brings accessibility to webGL with easy-to-use [react-three-fiber](https://github.com/pmndrs/react-three-fiber) components:
+
+- Focus and focus indication
+- Tab index and keyboard navigation
+- Screen reader support and alt-text
+- Roles and cursor shapes
+- Descriptive links
+
+Live demo: https://n4rzi.csb.app
 
 # How to use
 
 First, place the `A11yAnnouncer` component next to the R3F Canvas component. This is critical, because it will manage the screen-reader and help emulate focus!
 
 ```jsx
+import { Canvas } from 'react-three-fiber'
 import { A11yAnnouncer } from '@react-three/a11y'
 
 function App() {
